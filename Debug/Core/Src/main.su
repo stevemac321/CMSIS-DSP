@@ -1,0 +1,13 @@
+../Core/Src/main.c:92:5:main	8	static
+../Core/Src/main.c:140:6:SystemClock_Config	88	static
+../Core/Src/main.c:187:13:MX_USART2_UART_Init	16	static
+../Core/Src/main.c:220:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:250:14:MX_ADC1_Init	32	static
+../Core/Src/main.c:302:13:test_fft	32	static
+../Core/Src/main.c:324:6:print_voltage_samples	32	static
+../Core/Src/main.c:331:6:print_fft	32	static
+../Core/Src/main.c:338:6:print_mag	16	static
+../Core/Src/main.c:345:6:analyze_results	32	static
+../Core/Src/main.c:377:6:print_graph	32	static
+../Core/Src/main.c:392:5:_write	24	static
+../Core/Src/main.c:402:6:Error_Handler	4	static,ignoring_inline_asm
