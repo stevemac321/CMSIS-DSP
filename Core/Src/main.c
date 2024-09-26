@@ -247,7 +247,9 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
- static void MX_ADC1_Init(void)
+
+/* USER CODE BEGIN ADC1_Init 2 */
+static void MX_ADC1_Init(void)
 {
 
 	/* USER CODE BEGIN ADC1_Init 0 */
@@ -289,11 +291,10 @@ static void MX_GPIO_Init(void)
 	{
 	  Error_Handler();
 	}
-/* USER CODE BEGIN ADC1_Init 2 */
-
+}
 /* USER CODE END ADC1_Init 2 */
 
-}
+
 /* USER CODE END MX_GPIO_Init_2 */
 
 

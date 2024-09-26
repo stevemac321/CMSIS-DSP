@@ -27,29 +27,29 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  0001e1d4  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000b766  00000000  00000000  0001e204  2**0
+ 12 .debug_info   0000b764  00000000  00000000  0001e204  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000020bf  00000000  00000000  0002996a  2**0
+ 13 .debug_abbrev 000020c0  00000000  00000000  00029968  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000998  00000000  00000000  0002ba30  2**3
+ 14 .debug_aranges 00000998  00000000  00000000  0002ba28  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 000006ac  00000000  00000000  0002c3c8  2**0
+ 15 .debug_rnglists 000006ac  00000000  00000000  0002c3c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0001854f  00000000  00000000  0002ca74  2**0
+ 16 .debug_macro  0001854f  00000000  00000000  0002ca6c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000c797  00000000  00000000  00044fc3  2**0
+ 17 .debug_line   0000c797  00000000  00000000  00044fbb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0009590e  00000000  00000000  0005175a  2**0
+ 18 .debug_str    0009590e  00000000  00000000  00051752  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      000000b3  00000000  00000000  000e7068  2**0
+ 19 .comment      000000b3  00000000  00000000  000e7060  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000356c  00000000  00000000  000e711c  2**2
+ 20 .debug_frame  0000356c  00000000  00000000  000e7114  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004b  00000000  00000000  000ea688  2**0
+ 21 .debug_line_str 0000004b  00000000  00000000  000ea680  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loc    00002140  00000000  00000000  000ea6d3  2**0
+ 22 .debug_loc    00002140  00000000  00000000  000ea6cb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_ranges 00000100  00000000  00000000  000ec813  2**0
+ 23 .debug_ranges 00000100  00000000  00000000  000ec80b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -2139,7 +2139,9 @@ static void MX_GPIO_Init(void)
 080014ac <MX_ADC1_Init>:
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
- static void MX_ADC1_Init(void)
+
+/* USER CODE BEGIN ADC1_Init 2 */
+static void MX_ADC1_Init(void)
 {
  80014ac:	b580      	push	{r7, lr}
  80014ae:	b086      	sub	sp, #24
@@ -2256,10 +2258,6 @@ static void MX_GPIO_Init(void)
 	  Error_Handler();
  8001556:	f000 f9f3 	bl	8001940 <Error_Handler>
 	}
-/* USER CODE BEGIN ADC1_Init 2 */
-
-/* USER CODE END ADC1_Init 2 */
-
 }
  800155a:	bf00      	nop
  800155c:	3718      	adds	r7, #24
