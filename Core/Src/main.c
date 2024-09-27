@@ -325,9 +325,10 @@ static void test_fft()
 void print_voltage_samples()
 {
 	printf("\nVoltage Samples:\r\n");
-	for(size_t i = 0; i < (FFT_LENGTH * 2); i++) {
-		printf("Real: %.6f, Imag: %.6f\r\n", FFT_Input_Q15_f[i], FFT_Input_Q15_f[i++] );
-	}
+	for(size_t i = 0; i < (FFT_LENGTH * 2); i += 2) {
+		printf("Real: %.6f, Imag: %.6f\r\n", FFT_Input_Q15_f[i], FFT_Input_Q15_f[i+1] );
+}
+
 }
 void print_fft()
 {
