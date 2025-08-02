@@ -315,7 +315,7 @@ static void test_fft()
 	    }
 		print_voltage_samples();
 		arm_cfft_instance_f32 S;
-		arm_cfft_init_f32(&S, FFT_LENGTH);
+		arm_cfft_init_f32(&S, FFT_LENGTH * 2); // there should be a voltage_len instead of FFT_LEN fo rboth
 	    arm_cfft_f32(&S, FFT_Input_Q15_f, 0, 1);  // Perform FFT (forward, bit-reversal enabled)
 	    print_fft();
 	    // You can now calculate magnitudes if needed
